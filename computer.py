@@ -1,13 +1,8 @@
 # realization: I was getting multiple errors that didn't make sense to me (like indentation when I knew it was right), 
-# it turns out the problem was that I didn't declare the attributes or include pass in the constructor. Once I did that everything worked.
-
-
-
-
-
-
-
-
+# it turns out the problem was that I didn't declare the attributes or include pass in the constructor. Once I did that everything worked
+# I had to do "from Computer import Computer" to get the class to work, I tried "import Computer" first, but then it took in a module
+# forgot to include "self" in methids
+# "self.inventory[itemID].description" instead of "self.inventory[itemID]", which just lead to the object location
 
 class Computer:
 
@@ -32,10 +27,16 @@ class Computer:
         pass
 
 
-def main():
-    newComputer: Computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
-    print(newComputer.description)
+
+    # update price
+
+    # update OS
 
 
-if __name__ == "__main__": 
-    main()
+# def main():
+#     newComputer: Computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
+#     print(newComputer.description)
+
+
+# if __name__ == "__main__": 
+#     main()
