@@ -36,7 +36,7 @@ def main():
     print("Done.\n")
     
     # Now, let's sell it!
-    print("Selling Item ID:", computer_id)
+    print("Selling Item ID:", computer_id, "for $", computer1.price)
     store.sell(computer_id)
 
     # Make sure it worked by checking inventory

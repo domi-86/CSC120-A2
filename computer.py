@@ -16,7 +16,7 @@ class Computer:
     price: int = 0
 
     # Constructor
-    def __init__(self, description: str, processor_type: str, hard_drive_capacity: int, memory: int, operating_system: str, year_made: int, price: int) -> None:
+    def __init__(self, description: str, processor_type: str, hard_drive_capacity: int, memory: int, operating_system: str, year_made: int, price: float) -> None:
         self.description = description
         self.processor_type = processor_type
         self.hard_drive_capacity = hard_drive_capacity

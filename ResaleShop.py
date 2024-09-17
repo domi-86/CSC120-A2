@@ -26,7 +26,9 @@ adds it to the inventory, returns the assigned item_id
 
     def buy(self, computer: Computer):
         self.itemID += 1
+        #print("Trying to add", computer.description, "to inventory.")
         self.inventory[self.itemID] = computer
+        #print("Success!")
         return self.itemID
 
     # selling a computer
