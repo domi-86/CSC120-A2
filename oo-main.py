@@ -22,6 +22,11 @@ def main():
     print("Checking inventory...")
     store.printInventory()
     print("Done.\n")
+
+    #Change the price
+    print("Changing price...")
+    store.updatePrice(1, 1000)
+    print("Computer now $", computer1.price)
     
     # Now, let's refurbish it
     new_OS = "MacOS Monterey"

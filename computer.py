@@ -1,9 +1,4 @@
-# realization: I was getting multiple errors that didn't make sense to me (like indentation when I knew it was right), 
-# it turns out the problem was that I didn't declare the attributes or include pass in the constructor. Once I did that everything worked
-# I had to do "from Computer import Computer" to get the class to work, I tried "import Computer" first, but then it took in a module
-# forgot to include "self" in methids
-# "self.inventory[itemID].description" instead of "self.inventory[itemID]", which just lead to the object location
-
+# class to store information about a computer
 class Computer:
 
     # Attributes
@@ -25,12 +20,6 @@ class Computer:
         self.year_made = year_made
         self.price = price
         pass
-
-
-
-    # update price
-
-    # update OS
 
 
 # def main():
